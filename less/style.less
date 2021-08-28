@@ -25,6 +25,7 @@ Version: 1.0.0
 
 // home
 @import "pages/home/header-home.less";
+@import "pages/home/boxes.less";
 @import "pages/home/home";
 @import "pages/cases";
 @import "pages/blog";
@@ -97,14 +98,11 @@ b, strong {
 }
 
 .label {
-    color: @green2;
-    margin-bottom: 20px;
-    font-weight: 600;
-    letter-spacing: .65px;
-
-    @media @xlg {
-      margin-bottom: 30px;
-    }
+    color: @primary;
+    margin-bottom: 16px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    font-size: 12px;
   }
 
 .overflow {
@@ -284,5 +282,23 @@ li {
         width: 30px;
         margin-left: -30px;
       }
+    }
+}
+
+.text-content {
+    h1,h2,h3,h4,h5 {
+        margin-bottom: 20px;
+
+        @media @xlg {
+            margin-bottom: 30px;
+        }
+    }
+
+    p {
+        margin-bottom: 20px;
+
+        @media @xlg {
+            margin-bottom: 30px;
+        }
     }
 }

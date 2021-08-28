@@ -43,6 +43,59 @@
     </div>
 	</div>
 
+  <?php $boxes = get_field('boxes'); ?>
+  <div class="overflow">
+    <div class="boxes">
+      <div class="container container-xl">
+        <div class="boxes__row">
+          <div class="left">
+            <div class="boxes__text text-content">
+              <div class="label"><?php the_field('boxes_labekl'); ?></div>
+              <?php the_field('boxes_text'); ?>
+            </div>
+            <div class="boxes-item">
+              <img src="<?php echo $boxes[0]['img']['url']; ?>" alt="<?php echo $boxes[0]['img']['url']; ?>">
+              <div class="boxes-item__content">
+                <!-- title -->
+                <h2 class="title"><?php echo $boxes[0]['title']; ?></h2>
+                <!-- link - button -->
+                <a href="<?php echo $boxes[0]['link']['url']; ?>" target="<?php echo $boxes[0]['link']['target']; ?>" class="btn btn--primary">
+                      <?php echo $boxes[0]['link']['title']; ?>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+
+              <div class="boxes-item">
+                <img src="<?php echo $boxes[1]['img']['url']; ?>" alt="<?php echo $boxes[1]['img']['url']; ?>">
+                <div class="boxes-item__content">
+                  <!-- title -->
+                  <h2 class="title"><?php echo $boxes[1]['title']; ?></h2>
+                  <!-- link - button -->
+                  <a href="<?php echo $boxes[1]['link']['url']; ?>" target="<?php echo $boxes[1]['link']['target']; ?>" class="btn btn--primary">
+                        <?php echo $boxes[1]['link']['title']; ?>
+                  </a>
+                </div>
+              </div>
+              
+              <div class="boxes-item">
+                <img src="<?php echo $boxes[2]['img']['url']; ?>" alt="<?php echo $boxes[2]['img']['url']; ?>">
+                <div class="boxes-item__content">
+                  <!-- title -->
+                  <h2 class="title"><?php echo $boxes[2]['title']; ?></h2>
+                  <!-- link - button -->
+                  <a href="<?php echo $boxes[2]['link']['url']; ?>" target="<?php echo $boxes[2]['link']['target']; ?>" class="btn btn--primary">
+                        <?php echo $boxes[2]['link']['title']; ?>
+                  </a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <div style="background-color: red; height: 200px;">NORMAL</div>
   </div>

@@ -643,30 +643,30 @@ h1 {
   }
 }
 h2 {
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 24px;
+  line-height: 32px;
 }
 @media (min-width: 576px) {
   h2 {
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 @media (min-width: 768px) {
   h2 {
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 28px;
+    line-height: 36px;
   }
 }
 @media (min-width: 992px) {
   h2 {
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 @media (min-width: 1190px) {
   h2 {
-    font-size: 30px;
-    line-height: 38px;
+    font-size: 36px;
+    line-height: 48px;
   }
 }
 h3 {
@@ -809,6 +809,7 @@ strong {
   width: 100vw;
   top: 0;
   left: 0;
+  margin-bottom: 60px;
   background-color: rgba(0, 185, 242, 0.5);
   max-height: 100vh;
   overflow-y: auto;
@@ -1675,6 +1676,7 @@ strong {
 @media (min-width: 1190px) {
   .header-home {
     height: 100vh;
+    margin-bottom: 60px;
   }
 }
 .header-home__slider > div {
@@ -1900,6 +1902,44 @@ strong {
 .header-home .tns-nav button:hover {
   background-color: transparent;
   box-shadow: 0 0 0 2px #fff;
+}
+.boxes__text {
+  max-width: 525px;
+}
+.boxes .boxes-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 760px;
+}
+.boxes .boxes-item > img {
+  width: 100%;
+}
+.boxes .boxes-item::before {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 50%;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  content: "";
+}
+.boxes .boxes-item__content {
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  right: 35px;
+}
+@media (min-width: 1190px) {
+  .boxes .boxes-item__content {
+    top: 65px;
+    left: 65px;
+    right: 65px;
+  }
+}
+.boxes .boxes-item__content .title {
+  margin-bottom: 35px;
+  color: #fff;
 }
 .home-big-link {
   margin: 70px 0;
@@ -2527,15 +2567,11 @@ strong {
   font-weight: 600;
 }
 .label {
-  color: #BEBD00;
-  margin-bottom: 20px;
-  font-weight: 600;
-  letter-spacing: 0.65px;
-}
-@media (min-width: 1190px) {
-  .label {
-    margin-bottom: 30px;
-  }
+  color: #00B9F2;
+  margin-bottom: 16px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  font-size: 12px;
 }
 .overflow {
   overflow-x: hidden;
@@ -2726,5 +2762,29 @@ li {
   .page-content ul li::before {
     width: 30px;
     margin-left: -30px;
+  }
+}
+.text-content h1,
+.text-content h2,
+.text-content h3,
+.text-content h4,
+.text-content h5 {
+  margin-bottom: 20px;
+}
+@media (min-width: 1190px) {
+  .text-content h1,
+  .text-content h2,
+  .text-content h3,
+  .text-content h4,
+  .text-content h5 {
+    margin-bottom: 30px;
+  }
+}
+.text-content p {
+  margin-bottom: 20px;
+}
+@media (min-width: 1190px) {
+  .text-content p {
+    margin-bottom: 30px;
   }
 }
