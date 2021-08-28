@@ -1,0 +1,288 @@
+/*
+Theme Name: neuro
+Theme URI: 
+Author: RS Web Developer
+Description: Neuro Template
+Version: 1.0.0
+*/
+
+@import "variables";
+@import "grid";
+@import "typography";
+
+// components
+
+@import "components/burger";
+@import "components/buttons";
+@import "components/menu";
+@import "components/breadcrump";
+
+// sections 
+
+@import "sections/footer";
+
+// pages
+
+// home
+@import "pages/home/header-home.less";
+@import "pages/home/home";
+@import "pages/cases";
+@import "pages/blog";
+@import "pages/contact-page";
+
+// global
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+
+html {
+    max-width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 100vw;
+    min-height: 200vh;
+
+    font-size: 1rem;
+    font-family: 'Manrope', sans-serif;
+    color: @dark1;
+
+    // overflow-x: hidden;
+
+    padding-top: 61px;
+
+    @media @xl {
+        padding-top: 80px;
+    }
+
+    &.home {
+        padding-top: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input, select, textarea, button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+button, a {
+    display: inline-block;
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+.label {
+    color: @green2;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: .65px;
+
+    @media @xlg {
+      margin-bottom: 30px;
+    }
+  }
+
+.overflow {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+ul li {
+    margin-bottom: 7px;
+
+    @media @xlg {
+        margin-bottom: 15px;
+    }
+}
+
+
+li {
+    list-style: none;
+}
+
+
+
+// COOKIE POPUP
+.moove_gdpr_cookie_info_bar {
+    box-shadow: 0 0 48px 0 rgba(0, 0, 0, .1);
+}
+
+.moove-gdpr-info-bar-content {
+
+    @media @lg {
+        padding: 20px 0 !important;
+    }
+
+    a, p, button, span {
+        font-size: 12px !important;
+        font-weight: 400 !important;
+
+        @media @md {
+            font-size: 16px !important;
+        }
+    
+    }
+
+    p:nth-child(1) {
+        margin-bottom: 15px !important;
+    }
+}
+
+.moove-gdpr-cookie-notice {
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media @md {
+        flex-wrap: nowrap;
+    }
+
+    p:first-child {
+        font-family: 'Manrope', sans-serif !important;
+        
+        @media @lg {
+            max-width: 65%;
+            font-size: 14px !important;
+            line-height: 1.6 !important;
+        }
+
+        @media @xl {
+            font-size: 14px !important;
+            max-width: 75%;
+
+        }
+    }
+
+    .change-settings-button {
+        white-space: nowrap;
+        margin-left: 0px !important;
+        background-color: @green2;
+        text-decoration: none !important;
+        color: #fff;
+        border-radius: 4px !important;
+
+        padding: 8px 30px !important;
+        font-weight: 300 !important;
+        font-family: 'Manrope', sans-serif !important;
+
+
+        @media @md {
+            margin-left:  10px !important;
+        }
+    }
+}
+
+.moove-gdpr-button-holder {
+    margin-left: 0px !important;
+    padding-left: 0 !important;
+    font-weight: 300 !important;
+
+    @media @md {
+        margin-left:  0px !important;
+    }
+
+    .mgbutton {
+        background-color: @green2 !important;
+        border-radius: 4px !important;
+        font-family: 'Manrope', sans-serif !important;
+        font-weight: 300 !important;
+    }
+}
+
+#moove_gdpr_cookie_info_bar.moove-gdpr-light-scheme  {
+    border-top: 0 solid #000 !important;
+    box-shadow: 0 0 48px 0 rgba(0, 0, 0, .1);
+}
+
+
+.page-content {
+    max-width: 920px;
+
+    margin: 50px auto 80px;
+  
+  
+    @media @xlg {
+      margin: 70px auto 100px;
+    }
+  
+    h1,h2,h3,h4,h5 {
+      margin-bottom: 20px;
+  
+      @media @xlg {
+        margin-bottom: 25px;
+      }
+  
+      &:first-child {
+        @media @xlg {
+          margin-bottom: 35px;
+        }
+      }
+  
+      &:not(:first-child) {
+        margin-top: 45px;
+  
+        @media @xlg {
+          margin-top: 65px;
+        }
+      }
+    }
+  
+    p {
+      margin-bottom: 15px;
+  
+      @media @lg {
+        margin-bottom: 25px;
+      }
+    }
+  
+    img {
+      margin: 50px 0;
+  
+      @media @xlg {
+        margin: 80px 0 90px
+      }
+    }
+  
+    
+    ul li::before {
+      content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: @green2; /* Change the color */
+      font-weight: bold; /* If you want it to be bold */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 20px; /* Also needed for space (tweak if needed) */
+      margin-left: -20px; /* Also needed for space (tweak if needed) */
+      font-size: 30px;
+  
+      @media @lg {
+        width: 30px;
+        margin-left: -30px;
+      }
+    }
+}

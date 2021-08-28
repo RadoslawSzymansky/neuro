@@ -1,0 +1,37 @@
+.breadcrump {
+
+  padding: 25px 0;
+
+  font-size: 14px;
+  margin-bottom: 15px;
+
+  @media @lg {
+    padding: 40px 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  @media @xl {
+    margin-bottom: 60px;
+  }
+
+  a {
+
+    transition: .2s;
+
+    &:not(:last-child):hover {
+      text-decoration: underline;
+    }
+
+    &:last-child {
+      color: #959798;
+    }
+  }
+
+  span {
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: middle;
+    color: @green2;
+  }
+}

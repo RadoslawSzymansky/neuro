@@ -1,0 +1,33 @@
+.btn {
+
+  padding: 14px 32px 16px 22px;
+
+  background-color: @secondary;
+  color: #fff;
+  font-weight: 300;
+
+  font-size: 14px;
+  border-radius: 4px;
+  display: inline-flex;
+
+  transition: .2s;
+  border: none;
+
+  box-shadow: 0 0 0 0 transparent;
+
+
+  @media @lg {
+    font-size: 16px;
+    padding: 16px 36px 19px 28px;
+  }
+
+  &:hover {
+    box-shadow: 0 0 2px 2px @secondary;
+    background-color: #fff;
+    color: @secondary;
+  }
+
+  &--small {
+    padding: 11px 29px 13px
+  }
+}

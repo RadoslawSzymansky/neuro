@@ -1,0 +1,326 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+@media (min-width: 344px) {
+  .container {
+    max-width: 358px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 1350px;
+  }
+}
+
+@media (min-width: 1190px) {
+  .container {
+    max-width: 1160px;
+  }
+}
+
+@media (min-width: 1430px) {
+  .container {
+    max-width: 1350px;
+  }
+  .container-xl {
+    max-width: 1350px;
+  }
+  .container-lg {
+    max-width: 1350px;
+  }
+}
+
+@media (min-width: 1630px) {
+  .container {
+    max-width: 1420px;
+  }
+  .container-xl {
+    max-width: 1570px;
+  }
+  .container-lg {
+    max-width: 1350px;
+  }
+}
+
+
+.container-padding-left {
+  padding-left: 15px;
+
+  @media @xsm {
+      padding-left: calc((100vw - 375px + 30px) / 2);
+  }
+
+  @media @sm {
+      padding-left: calc((100vw - 540px + 30px) / 2);
+  }
+
+  @media @md {
+      padding-left: calc((100vw - 720px + 30px) / 2);
+  }
+
+  @media @lg {
+      padding-left: calc((100vw - 1350px + 30px) / 2);
+  }
+
+  @media @xlg {
+      padding-left: calc((100vw - 1140px + 30px) / 2);
+  }
+
+  @media @xl {
+      padding-left: calc((100vw - 1350px + 30px) / 2);
+  }
+
+  @media @xxl {
+    padding-left: calc((100vw - 1420px + 20px) / 2);
+}
+
+  &-lg {
+      @media @lg {
+          padding-left: calc((100vw - 1350px + 30px) / 2);
+      }
+  }
+
+  &-xl {
+
+      @media @xxl {
+          padding-left: calc((100vw - 1570px + 30px) / 2);
+      }
+  }
+}
+
+
+.container-padding-left-xl {
+  padding-left: 15px;
+
+  @media @xsm {
+      padding-left: calc((100vw - 375px + 30px) / 2);
+  }
+
+  @media @sm {
+      padding-left: calc((100vw - 540px + 30px) / 2);
+  }
+
+  @media @md {
+      padding-left: calc((100vw - 720px + 30px) / 2);
+  }
+
+  @media @lg {
+      padding-left: calc((100vw - 1350px + 30px) / 2);
+  }
+
+  @media @xlg {
+      padding-left: calc((100vw - 1140px + 30px) / 2);
+  }
+
+  @media @xl {
+      padding-left: calc((100vw - 1350px + 30px) / 2);
+  }
+
+  @media @xxl {
+      padding-left: calc((100vw - 1570px + 30px) / 2);
+  }
+}
+
+
+
+
+.container-padding-right {
+  padding-right: 15px;
+
+  @media @xsm {
+      padding-right: calc((100vw - 375px + 30px) / 2);
+  }
+
+  @media @sm {
+      padding-right: calc((100vw - 540px + 30px) / 2);
+  }
+
+  @media @md {
+      padding-right: calc((100vw - 720px + 30px) / 2);
+  }
+
+  @media @lg {
+      padding-right: calc((100vw - 1350px + 30px) / 2);
+  }
+
+  @media @xlg {
+      padding-right: calc((100vw - 1140px + 30px) / 2);
+  }
+
+  @media @xl {
+      padding-right: calc((100vw - 1350px + 30px) / 2);
+  }
+
+  &-md {
+      @media @lg {
+          padding-right: calc((100vw - 1350px + 30px) / 2);
+      }
+  }
+
+  &-xl {
+
+      @media @xxl {
+          padding-right: calc((100vw - 1570px + 30px) / 2);
+      }
+  }
+}
+
+
+.container-padding-right-xl {
+  padding-right: 15px;
+
+  @media @xsm {
+      padding-right: calc((100vw - 375px + 30px) / 2);
+  }
+
+  @media @sm {
+      padding-right: calc((100vw - 540px + 30px) / 2);
+  }
+
+  @media @md {
+      padding-right: calc((100vw - 720px + 30px) / 2);
+  }
+
+  @media @lg {
+      padding-right: calc((100vw - 1350px + 30px) / 2);
+  }
+
+  @media @xlg {
+      padding-right: calc((100vw - 1140px + 30px) / 2);
+  }
+
+  @media @xl {
+      padding-right: calc((100vw - 1350px + 30px) / 2);
+  }
+
+  @media @xxl {
+      padding-right: calc((100vw - 1570px + 30px) / 2);
+  }
+}
+
+.container-padding {
+  padding: 0 15px;    
+  padding: 0 15px;
+
+  @media @xsm {
+      padding-left: calc((100vw - 375px + 30px) / 2);        
+      padding-right: calc((100vw - 375px + 30px) / 2);
+  }
+
+  @media @sm {
+      padding-left: calc((100vw - 540px + 30px) / 2);        
+      padding-right: calc((100vw - 540px + 30px) / 2);
+  }
+
+  @media @md {
+      padding-left: calc((100vw - 720px + 30px) / 2);        
+      padding-right: calc((100vw - 720px + 30px) / 2);
+  }
+
+  @media @lg {
+      padding-left: calc((100vw - 1350px + 30px) / 2);        
+      padding-right: calc((100vw - 1350px + 30px) / 2);
+  }
+
+  @media @xlg {
+      padding-left: calc((100vw - 1140px + 30px) / 2);        
+      padding-right: calc((100vw - 1140px + 30px) / 2);
+  }
+
+  @media @xl {
+      padding-left: calc((100vw - 1350px + 30px) / 2);        
+      padding-right: calc((100vw - 1350px + 30px) / 2);
+  }
+
+  &-md {
+      @media @lg {
+          padding-left: calc((100vw - 1350px + 30px) / 2);            
+          padding-right: calc((100vw - 1350px + 30px) / 2);
+      }
+  }
+
+  &-xl {
+
+      @media @xxl {
+          padding-left: calc((100vw - 1570px + 30px) / 2);            
+          padding-right: calc((100vw - 1570px + 30px) / 2);
+      }
+  }
+}
+
+
+.container-padding-xl {
+  padding: 0 15px;    
+  padding: 0 15px;
+
+  @media @xsm {
+      padding-left: calc((100vw - 375px + 30px) / 2);        
+      padding-right: calc((100vw - 375px + 30px) / 2);
+  }
+
+  @media @sm {
+      padding-left: calc((100vw - 540px + 30px) / 2);        
+      padding-right: calc((100vw - 540px + 30px) / 2);
+  }
+
+  @media @md {
+      padding-left: calc((100vw - 720px + 30px) / 2);        
+      padding-right: calc((100vw - 720px + 30px) / 2);
+  }
+
+  @media @lg {
+      padding-left: calc((100vw - 1350px + 30px) / 2);        
+      padding-right: calc((100vw - 1350px + 30px) / 2);
+  }
+
+  @media @xlg {
+      padding-left: calc((100vw - 1140px + 30px) / 2);        
+      padding-right: calc((100vw - 1140px + 30px) / 2);
+  }
+
+  @media @xl {
+      padding-left: calc((100vw - 1350px + 30px) / 2);        
+      padding-right: calc((100vw - 1350px + 30px) / 2);
+  }
+
+  @media @lg {
+      padding-left: calc((100vw - 1350px + 30px) / 2);            
+      padding-right: calc((100vw - 1350px + 30px) / 2);
+  }
+
+
+  @media @xxl {
+      padding-left: calc((100vw - 1570px + 30px) / 2);            
+      padding-right: calc((100vw - 1570px + 30px) / 2);
+  }
+
+}

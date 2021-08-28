@@ -1,0 +1,29 @@
+{
+  "name": "sunrise",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lessw": "less-watch-compiler less ./ style.less"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/herwaldi/sunrise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/herwaldi/sunrise/issues"
+  },
+  "homepage": "https://gitlab.com/herwaldi/sunrise#readme",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "tiny-slider": "^2.9.3"
+  },
+  "dependencies": {
+    "owl.carousel": "^2.3.4",
+    "simple-lightbox": "^2.1.0",
+    "simplelightbox": "^2.8.0"
+  }
+}
