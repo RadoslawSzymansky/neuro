@@ -13,6 +13,8 @@
 
     <script src="<?php echo get_template_directory_uri(); ?>\node_modules\simplelightbox\dist\simple-lightbox.min.js"></script>
 
+    <script src="<?php echo get_template_directory_uri(); ?>/js/header-home-slider.js"></script>
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             new SimpleLightbox('.gallery-0 a', { });
