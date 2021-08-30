@@ -1,18 +1,121 @@
 .boxes {
 
+  position: relative;
+
+  &::before {
+    display: block;
+    content: "";
+    background: @gray1;
+    height: 100%;
+    width: 62%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 20px 20px 0;
+    z-index: -1;
+  }
+
   &__row {
+
+    @media @lg {
+      display: flex;
+      justify-content: space-between;
+    }
 
     .left {
 
+      @media @lg {
+        flex: 1;
+        max-width: calc(50% - 10px);
+      }
     }
 
     .right {
+      text-align: center;
 
+      @media @lg {
+        flex: 1;
+        padding-bottom: 70px;
+
+        max-width: calc(50% - 10px);
+      }
+
+      @media @xlg {
+        padding-bottom: 146px;
+      }
+
+      .call-us {
+        display: inline-flex;
+        margin: 10px auto 30px;
+
+        @media @lg {
+          margin-top: 60px;
+        }
+
+        @media @xlg {
+          margin-top: 120px;
+        }
+
+        &:hover {
+          svg {
+
+            transform: scale(1.08);
+          }
+        }
+
+        svg {
+          margin-right: 12px;
+          transform: scale(1);
+          width: 52px;
+          height: 52px;
+          transform-origin: 100% auto;
+          transition: .5s;
+        }
+
+        p {
+          font-weight: 300;
+
+          span {
+            font-weight: 400;
+          }
+        }
+      }
+
+      .sticky {
+        @media @lg {
+          position: -webkit-sticky; /* Safari */
+          position: sticky;
+          top: 85px;
+        }
+
+        @media @xlg {
+          top: 150px;
+        }
+      }
+    }
+  }
+
+  .item-wrapper {
+
+    @media @lg {
+      padding-bottom: 60%;
     }
   }
 
   &__text {
     max-width: 525px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    @media @lg {
+      margin-top: 120px;
+      margin-bottom: 120px;
+    }
+
+    @media @xl {
+      margin-top: 160px;
+      margin-bottom: 192px;
+    }
   }
 
   .boxes-item {
@@ -20,6 +123,8 @@
     border-radius: 10px;
     overflow: hidden;
     max-width: 760px;
+    margin-bottom: 20px;
+    text-align: left;
 
     > img {
       width: 100%;
@@ -35,6 +140,10 @@
       content: "";
     }
 
+    &:hover  .btn {
+      opacity: 1;
+    }
+
     &__content {
       position: absolute;
       top: 25px;
@@ -46,14 +155,29 @@
         left: 65px;
         right: 65px;
       }
-
+      
       .title {
         margin-bottom: 35px;
         color: #fff;
       }
 
       .btn {
+        background: transparent;
+        border: 1px solid #fff;
+        box-shadow: none;
+        color: #fff;
 
+        transition: .3s;
+
+        @media @lg {
+          opacity: 0;
+        }
+
+        &:hover {
+          background: @secondary;
+          box-shadow: none;
+          border: 1px solid @secondary;
+        }
       }
     }
   }
