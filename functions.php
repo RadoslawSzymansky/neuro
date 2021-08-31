@@ -96,3 +96,8 @@ function get_breadcrumb() {
 add_shortcode('show_breadcrumb', 'get_breadcrumb');
 
 add_filter( 'pll_the_languages_args', function( $args ) { $args['display_names_as'] = 'slug'; return $args; } );
+
+
+add_action('init', function() {
+	pll_register_string('dowiedz-sie-wiecej', 'Dowiedz się więcej');
+});

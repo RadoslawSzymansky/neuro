@@ -1676,6 +1676,203 @@ strong {
 .footer-bottom > span:last-child {
   margin-left: auto;
 }
+.news {
+  padding: 60px 0 60px;
+}
+@media (min-width: 992px) {
+  .news {
+    padding: 140px 0 140px;
+  }
+}
+.news__wrapper {
+  padding-left: 15px;
+}
+@media (min-width: 344px) {
+  .news__wrapper {
+    padding-left: calc((100vw - 375px + 30px) / 2);
+  }
+}
+@media (min-width: 576px) {
+  .news__wrapper {
+    padding-left: calc((100vw - 540px + 30px) / 2);
+  }
+}
+@media (min-width: 768px) {
+  .news__wrapper {
+    padding-left: calc((100vw - 720px + 30px) / 2);
+  }
+}
+@media (min-width: 992px) {
+  .news__wrapper {
+    padding-left: calc((100vw - 960px + 30px) / 2);
+  }
+}
+@media (min-width: 1190px) {
+  .news__wrapper {
+    padding-left: calc((100vw - 1140px + 30px) / 2);
+  }
+}
+@media (min-width: 1430px) {
+  .news__wrapper {
+    padding-left: calc((100vw - 1392px + 30px) / 2);
+  }
+}
+@media (min-width: 992px) {
+  .news__wrapper--md {
+    padding-left: calc((100vw - 960px + 30px) / 2);
+  }
+}
+@media (min-width: 1630px) {
+  .news__wrapper--xl {
+    padding-left: calc((100vw - 1590px + 30px) / 2);
+  }
+}
+@media (min-width: 344px) {
+  .news__wrapper {
+    padding-left: calc((100vw - 375px + 30px) / 2);
+  }
+}
+@media (min-width: 576px) {
+  .news__wrapper {
+    padding-left: calc((100vw - 540px + 30px) / 2);
+  }
+}
+@media (min-width: 768px) {
+  .news__wrapper {
+    padding-left: calc((100vw - 720px + 30px) / 2);
+  }
+}
+@media (min-width: 992px) {
+  .news__wrapper {
+    padding-left: calc((100vw - 1350px + 30px) / 2);
+  }
+}
+@media (min-width: 1190px) {
+  .news__wrapper {
+    padding-left: calc((100vw - 1140px + 30px) / 2);
+  }
+}
+@media (min-width: 1430px) {
+  .news__wrapper {
+    padding-left: calc((100vw - 1350px + 30px) / 2);
+  }
+}
+@media (min-width: 1630px) {
+  .news__wrapper {
+    padding-left: calc((100vw - 1420px + 20px) / 2);
+  }
+}
+@media (min-width: 992px) {
+  .news__wrapper-lg {
+    padding-left: calc((100vw - 1350px + 30px) / 2);
+  }
+}
+@media (min-width: 1630px) {
+  .news__wrapper-xl {
+    padding-left: calc((100vw - 1570px + 30px) / 2);
+  }
+}
+@media (min-width: 992px) {
+  .news__wrapper {
+    display: flex;
+  }
+}
+.news__intro {
+  margin-bottom: 50px;
+  max-width: 299px;
+}
+@media (min-width: 576px) {
+  .news__intro {
+    width: 299px;
+    min-width: 299px;
+  }
+}
+.news__intro h2 {
+  margin-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .news__intro h2 {
+    margin-bottom: 59px;
+  }
+}
+.news__intro .news-nav {
+  display: flex;
+}
+.news__intro .news-nav > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 73px;
+  height: 73px;
+  margin-right: 20px;
+  background: #D5D5D5;
+  border: none;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.news__intro .news-nav > button:hover {
+  background: #00B9F2;
+}
+.news__intro .news-nav > button:nth-child(2) img {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  .news .slider-wrapper .tns-outer {
+    max-width: calc(100vw - 199px - 100px);
+  }
+}
+@media (min-width: 1190px) {
+  .news .slider-wrapper .tns-outer {
+    max-width: calc(100vw - 299px - 100px);
+  }
+}
+.news__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 355px;
+  padding: 30px 20px 20px;
+  margin-right: 20px;
+  background: #F5F5F5;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+@media (min-width: 992px) {
+  .news__item {
+    margin-left: 20px;
+    margin-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  .news__item {
+    height: 535px;
+    padding: 30px 40px 40px;
+  }
+  .news__item:hover {
+    background: #182841;
+  }
+  .news__item:hover .title-wrapper {
+    color: #fff;
+  }
+}
+.news__item a {
+  display: block;
+}
+.news__item .get-more {
+  display: flex;
+  align-items: center;
+  color: #00B9F2;
+  font-weight: 300;
+}
+.news__item .get-more img {
+  margin-right: 10px;
+  transform: scale(1);
+  transition: 0.2s;
+}
+.news__item .get-more:hover img {
+  transform: scale(1.1);
+  margin-right: 25px;
+}
 .header-home {
   position: relative;
   background-color: #EFE9E5;

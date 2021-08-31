@@ -15,6 +15,9 @@
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/header-home-slider.js"></script>
 
+    <script src="<?php echo get_template_directory_uri(); ?>/js/news-slider.js"></script>
+
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             new SimpleLightbox('.gallery-0 a', { });
