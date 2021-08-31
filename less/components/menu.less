@@ -12,7 +12,7 @@
   z-index: 99;
 
   border-radius: 0 0 20px 0;
-  transition: .4s;
+  transition: .8s;
   height: 64px;
 
   backdrop-filter: blur(11px);
@@ -27,6 +27,15 @@
     height: auto;
 
     width: calc(100vw - 50px);
+  }
+
+  .scrolled & {
+    background-color: rgba(0, 185, 242, 1);
+    top: -200px;
+  }
+
+  .scrolled.is-going-top & {
+    top: 0;
   }
 
   .menu-fixed-opened & {

@@ -816,7 +816,7 @@ strong {
   overflow-x: hidden;
   z-index: 99;
   border-radius: 0 0 20px 0;
-  transition: 0.4s;
+  transition: 0.8s;
   height: 64px;
   backdrop-filter: blur(11px);
   overflow: hidden;
@@ -831,6 +831,13 @@ strong {
     height: auto;
     width: calc(100vw - 50px);
   }
+}
+.scrolled .menu-fixed {
+  background-color: #00b9f2;
+  top: -200px;
+}
+.scrolled.is-going-top .menu-fixed {
+  top: 0;
 }
 .menu-fixed-opened .menu-fixed {
   height: 100vh;
@@ -1956,7 +1963,7 @@ strong {
 }
 @media (min-width: 1190px) {
   .boxes__row .right .call-us {
-    margin-top: 120px;
+    margin-top: 100px;
   }
 }
 .boxes__row .right .call-us:hover svg {
