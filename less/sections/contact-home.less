@@ -1,0 +1,53 @@
+.contact-home {
+  border-radius: 20px;
+  background-size: cover;
+  background-position: 59% center;
+  padding: 40px;
+
+  @media @md {
+    padding: 60px;
+    background-position: center;
+  }
+
+  &__content {
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 10px;
+
+    min-height: 450px;
+    max-width: 577px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 35px 25px;
+
+    @media @lg {
+      padding: 70px 80px;
+      min-height: 690px;
+
+      background: #fff;
+
+    }
+
+    h2,h3,h4, p {
+      margin-bottom: 20px;
+    }
+
+    @media @lg {
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .btn {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media @lg {
+  .contact-home-container {
+    .container-padding-xl;
+  }
+}
