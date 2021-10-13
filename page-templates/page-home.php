@@ -120,6 +120,7 @@
             <div class="news__item">
               <a href="<?php  echo $item->guid; ?>" class="title-wrapper">
                 <h3><?php  echo $item->post_title; ?></h3>
+                <p class="short-desc"><?php the_field('short_desc', $item->ID); ?></p>
               </a>
               <a href="<?php  echo $item->guid; ?>" class="get-more">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/arrow-small.svg">

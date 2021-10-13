@@ -99,8 +99,11 @@
       left: 35px;
       right: 35px;
       height: calc(100% - 50px);
-      display: flex;
-      flex-direction: column;
+
+      @media (max-width: 992px){
+        display: flex;
+        flex-direction: column;
+      }
 
       @media @xlg {
         top: 65px;

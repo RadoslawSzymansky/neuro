@@ -32,7 +32,11 @@
     }
 
     .news-nav {
-      display: flex;
+      display: none;
+
+      @media @lg {
+        display: flex;
+      }
 
       > button {
         display: flex;
@@ -94,7 +98,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    height: 355px;
+    height: 430px;
     padding: 30px 20px 20px;
 
     margin-right: 20px;
@@ -108,12 +112,34 @@
     transition: .3s;
     border-radius: 10px;
 
+    h2,h3,h4 {
+      margin-bottom: 20px;
+      font-size: 18px;
+
+      @media @xlg {
+        font-size: 20px;
+      }
+
+      @media @xl {
+        margin-bottom: 40px;
+      }
+
+      @media @xxl {
+        font-size: 24px;
+      }
+
+      + p {
+        max-width: 310px;
+      }
+    }
+
     @media @lg {
       height: 535px;
       padding: 30px 40px 40px;
 
+
       &:hover {
-        background: @secondary;
+        background: #D0D3D5;
 
         .title-wrapper {
           color: #fff;
