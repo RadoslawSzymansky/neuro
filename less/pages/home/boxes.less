@@ -2,19 +2,6 @@
 
   position: relative;
 
-  &::before {
-    display: block;
-    content: "";
-    background: @gray1;
-    height: 100%;
-    width: 62%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 0 20px 20px 0;
-    z-index: -1;
-  }
-
   &__row {
 
     @media @lg {
@@ -35,62 +22,25 @@
 
       @media @lg {
         flex: 1;
-        padding-bottom: 70px;
+        padding-bottom: 20px;
 
         max-width: calc(50% - 10px);
       }
 
-      @media @xlg {
-        padding-bottom: 146px;
-      }
+      .sticky {
 
-      .call-us {
-        display: inline-flex;
-        margin: 10px auto 30px;
+        margin-top: 10px;
 
         @media @lg {
-          margin-top: 60px;
+          margin-top: 40px;
         }
 
-        @media @xlg {
-          margin-top: 100px;
-        }
-
-        &:hover {
-          svg {
-
-            transform: scale(1.08);
-          }
-        }
-
-        svg {
-          margin-right: 12px;
-          transform: scale(1);
-          width: 52px;
-          height: 52px;
-          transform-origin: 100% auto;
-          transition: .5s;
-        }
-
-        p {
-          font-weight: 300;
-
-          span {
-            font-weight: 400;
-          }
-        }
-      }
-
-      .sticky {
         @media @lg {
           position: -webkit-sticky; /* Safari */
           position: sticky;
-          top: 85px;
+          top: 30px;
         }
 
-        @media @xlg {
-          top: 150px;
-        }
       }
     }
   }
@@ -108,12 +58,11 @@
     margin-bottom: 60px;
 
     @media @lg {
-      margin-top: 120px;
+      margin-top: 40px;
       margin-bottom: 120px;
     }
 
     @media @xl {
-      margin-top: 160px;
       margin-bottom: 192px;
     }
   }
@@ -136,7 +85,7 @@
       top: 0;
       bottom: 50%;
       left: 0;
-      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,0));  
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,0));
       content: "";
     }
 
@@ -149,13 +98,16 @@
       top: 25px;
       left: 35px;
       right: 35px;
+      height: calc(100% - 50px);
+      display: flex;
+      flex-direction: column;
 
       @media @xlg {
         top: 65px;
         left: 65px;
         right: 65px;
       }
-      
+
       .title {
         margin-bottom: 35px;
         color: #fff;
@@ -168,9 +120,17 @@
         color: #fff;
 
         transition: .3s;
+        margin-top: auto;
+
+        @media (max-width: 992px){
+          border: none;
+          box-shadow: none;
+          background-color: rgba(0, 185, 242, .85);
+        }
 
         @media @lg {
           opacity: 0;
+          margin-top: 0;
         }
 
         &:hover {

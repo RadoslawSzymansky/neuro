@@ -77,3 +77,15 @@
 				</div>
 			</div>
 	</nav>
+
+
+  <div class="btn-fixed">
+    <?php
+      if (get_field('menu-top_btn', 'options')) {
+        $howLink = get_field('menu-top_btn', 'options');
+        ?>
+        <a href="<?php echo $howLink['url']; ?>" target="<?php echo $howLink['target']; ?>" class="btn btn--small">
+          <?php echo $howLink['title']; ?>
+        </a>
+    <?php };?>
+  </div>

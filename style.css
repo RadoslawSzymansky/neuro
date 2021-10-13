@@ -807,6 +807,13 @@ strong {
 .btn--small {
   padding: 11px 29px 13px;
 }
+.btn--transparent {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.btn--transparent:hover {
+  box-shadow: 0 0 2px 2px transparent;
+}
 .menu-fixed {
   position: fixed;
   width: 100vw;
@@ -869,7 +876,12 @@ strong {
   margin-bottom: 0;
 }
 .menu-fixed ul li.current-menu-item a {
-  color: #182841;
+  color: #00B9F2;
+}
+@media (min-width: 1430px) {
+  .menu-fixed ul li.current-menu-item a {
+    color: #182841;
+  }
 }
 .menu-fixed ul a {
   transition: 0.2s;
@@ -1207,6 +1219,11 @@ strong {
   font-weight: 300;
   transition: 0.2s;
   color: #000;
+}
+@media (min-width: 1430px) {
+  .menu-fixed__wrapper .menu-fixed__langs > ul li {
+    color: #fff;
+  }
 }
 @media (min-width: 1190px) {
   .menu-fixed__wrapper .menu-fixed__langs > ul li:not(:first-child) {
@@ -1788,11 +1805,11 @@ strong {
   margin-left: auto;
 }
 .news {
-  padding: 60px 0 60px;
+  padding: 40px 0 60px;
 }
 @media (min-width: 992px) {
   .news {
-    padding: 140px 0 140px;
+    padding: 60px 0 140px;
   }
 }
 .news__wrapper {
@@ -2085,7 +2102,7 @@ strong {
   position: relative;
   background-color: #EFE9E5;
 }
-@media (min-width: 1190px) {
+@media (min-width: 992px) {
   .header-home {
     height: 100vh;
     margin-bottom: 60px;
@@ -2154,9 +2171,10 @@ strong {
   transform: scale(1);
   transform-origin: center 0;
   width: auto;
-  height: 100vh;
+  height: 580px;
+  max-height: 100vh;
   max-width: 500vw;
-  filter: brightness(0.8);
+  filter: brightness(0.95);
 }
 @media (min-width: 344px) {
   .header-home__img {
@@ -2318,18 +2336,6 @@ strong {
 .boxes {
   position: relative;
 }
-.boxes::before {
-  display: block;
-  content: "";
-  background: #F5F5F5;
-  height: 100%;
-  width: 62%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 0 20px 20px 0;
-  z-index: -1;
-}
 @media (min-width: 992px) {
   .boxes__row {
     display: flex;
@@ -2348,57 +2354,24 @@ strong {
 @media (min-width: 992px) {
   .boxes__row .right {
     flex: 1;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
     max-width: calc(50% - 10px);
   }
 }
-@media (min-width: 1190px) {
-  .boxes__row .right {
-    padding-bottom: 146px;
-  }
-}
-.boxes__row .right .call-us {
-  display: inline-flex;
-  margin: 10px auto 30px;
+.boxes__row .right .sticky {
+  margin-top: 10px;
 }
 @media (min-width: 992px) {
-  .boxes__row .right .call-us {
-    margin-top: 60px;
+  .boxes__row .right .sticky {
+    margin-top: 40px;
   }
-}
-@media (min-width: 1190px) {
-  .boxes__row .right .call-us {
-    margin-top: 100px;
-  }
-}
-.boxes__row .right .call-us:hover svg {
-  transform: scale(1.08);
-}
-.boxes__row .right .call-us svg {
-  margin-right: 12px;
-  transform: scale(1);
-  width: 52px;
-  height: 52px;
-  transform-origin: 100% auto;
-  transition: 0.5s;
-}
-.boxes__row .right .call-us p {
-  font-weight: 300;
-}
-.boxes__row .right .call-us p span {
-  font-weight: 400;
 }
 @media (min-width: 992px) {
   .boxes__row .right .sticky {
     position: -webkit-sticky;
     /* Safari */
     position: sticky;
-    top: 85px;
-  }
-}
-@media (min-width: 1190px) {
-  .boxes__row .right .sticky {
-    top: 150px;
+    top: 30px;
   }
 }
 @media (min-width: 992px) {
@@ -2413,13 +2386,12 @@ strong {
 }
 @media (min-width: 992px) {
   .boxes__text {
-    margin-top: 120px;
+    margin-top: 40px;
     margin-bottom: 120px;
   }
 }
 @media (min-width: 1430px) {
   .boxes__text {
-    margin-top: 160px;
     margin-bottom: 192px;
   }
 }
@@ -2451,6 +2423,9 @@ strong {
   top: 25px;
   left: 35px;
   right: 35px;
+  height: calc(100% - 50px);
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 1190px) {
   .boxes .boxes-item__content {
@@ -2469,10 +2444,19 @@ strong {
   box-shadow: none;
   color: #fff;
   transition: 0.3s;
+  margin-top: auto;
+}
+@media (max-width: 992px) {
+  .boxes .boxes-item__content .btn {
+    border: none;
+    box-shadow: none;
+    background-color: rgba(0, 185, 242, 0.85);
+  }
 }
 @media (min-width: 992px) {
   .boxes .boxes-item__content .btn {
     opacity: 0;
+    margin-top: 0;
   }
 }
 .boxes .boxes-item__content .btn:hover {
@@ -3351,4 +3335,24 @@ li {
 }
 .call-us p span {
   font-weight: 400;
+}
+.btn-fixed {
+  position: fixed;
+  z-index: 15;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #fff;
+  padding: 10px 20px;
+}
+@media (min-width: 992px) {
+  .btn-fixed {
+    display: none;
+  }
+}
+.btn-fixed .btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 300;
 }

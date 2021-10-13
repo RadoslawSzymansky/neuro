@@ -68,7 +68,11 @@
       margin-bottom: 0;
 
       &.current-menu-item a {
-        color: @secondary;
+        color: @primary;
+
+        @media @xl {
+          color: @secondary;
+        }
       }
     }
 
@@ -259,6 +263,10 @@
           font-weight: 300;
           transition: .2s;
           color: #000;
+
+          @media @xl {
+            color: #fff;
+          }
 
           &:not(:first-child) {
 
