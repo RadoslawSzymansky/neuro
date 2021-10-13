@@ -1,6 +1,6 @@
 /*
 Theme Name: neuro
-Theme URI: 
+Theme URI:
 Author: RS Web Developer
 Description: Neuro Template
 Version: 1.0.0
@@ -17,7 +17,7 @@ Version: 1.0.0
 @import "components/menu";
 @import "components/breadcrump";
 
-// sections 
+// sections
 
 @import "sections/footer";
 @import "sections/news";
@@ -145,7 +145,7 @@ li {
         @media @md {
             font-size: 16px !important;
         }
-    
+
     }
 
     p:nth-child(1) {
@@ -166,7 +166,7 @@ li {
 
     p:first-child {
         font-family: 'Manrope', sans-serif !important;
-        
+
         @media @lg {
             max-width: 65%;
             font-size: 14px !important;
@@ -226,51 +226,51 @@ li {
     max-width: 920px;
 
     margin: 50px auto 80px;
-  
-  
+
+
     @media @xlg {
       margin: 70px auto 100px;
     }
-  
+
     h1,h2,h3,h4,h5 {
       margin-bottom: 20px;
-  
+
       @media @xlg {
         margin-bottom: 25px;
       }
-  
+
       &:first-child {
         @media @xlg {
           margin-bottom: 35px;
         }
       }
-  
+
       &:not(:first-child) {
         margin-top: 45px;
-  
+
         @media @xlg {
           margin-top: 65px;
         }
       }
     }
-  
+
     p {
       margin-bottom: 15px;
-  
+
       @media @lg {
         margin-bottom: 25px;
       }
     }
-  
+
     img {
       margin: 50px 0;
-  
+
       @media @xlg {
         margin: 80px 0 90px
       }
     }
-  
-    
+
+
     ul li::before {
       content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
       color: @green2; /* Change the color */
@@ -279,7 +279,7 @@ li {
       width: 20px; /* Also needed for space (tweak if needed) */
       margin-left: -20px; /* Also needed for space (tweak if needed) */
       font-size: 30px;
-  
+
       @media @lg {
         width: 30px;
         margin-left: -30px;
@@ -303,4 +303,37 @@ li {
             margin-bottom: 30px;
         }
     }
+}
+
+.call-us {
+  display: inline-flex;
+  align-items: center;
+
+  &:hover {
+    svg {
+      transform: scale(1.08);
+    }
+  }
+
+  &--white {
+    color: #fff;
+    filter: brightness(0) invert(1);
+  }
+
+  svg {
+    margin-right: 12px;
+    transform: scale(1);
+    width: 38px;
+    height: 38px;
+    transform-origin: 100% auto;
+    transition: .5s;
+  }
+
+  p {
+    font-weight: 300;
+
+    span {
+      font-weight: 400;
+    }
+  }
 }
