@@ -4,11 +4,11 @@
   position: relative;
   cursor: pointer;
   z-index: 10000;
-  
+
   display: inline-block;
   width: 28px;
   height: 29px;
-  
+
   padding: 2px;
   margin-left: 15px;
 
@@ -27,8 +27,8 @@
 
   div {
       width: 24px;
-      height: 2px;
-      margin-top: 4px;
+      height: 1px;
+      margin-top: 6px;
       background-color: #Fff;
       border-radius: 3px;
       transition: .2s;
@@ -37,6 +37,10 @@
 
       &:first-child {
           margin-top: 0;
+      }
+
+      &:nth-child(2) {
+        width: 18px;
       }
   }
 
@@ -53,7 +57,7 @@
       transform: rotate(-45deg);
       margin-top: 0px;
       width: 24px;
-      height: 2px;
+      height: 1px;
       transition: .3s;
       background-color: #fff;
 
@@ -62,7 +66,7 @@
           transform: rotate(45deg);
           top: 2px;
       }
-      
+
       &:nth-child(3) {
           display: none;
       }
