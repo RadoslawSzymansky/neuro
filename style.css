@@ -814,6 +814,13 @@ strong {
 .btn--transparent:hover {
   box-shadow: 0 0 2px 2px transparent;
 }
+.btn--primary {
+  border: 1px solid #00B9F2;
+  color: #00B9F2;
+}
+.btn--primary:hover {
+  box-shadow: 0 0 2px 2px transparent;
+}
 .menu-fixed {
   position: fixed;
   width: 100vw;
@@ -2038,102 +2045,120 @@ strong {
   transform: scale(1.1);
   margin-right: 25px;
 }
-.contact-home {
+.contact-footer {
+  margin-bottom: 54px;
   border-radius: 20px;
-  background-size: cover;
+  background-size: 0;
   background-position: 59% center;
-  padding: 40px;
 }
-@media (min-width: 768px) {
-  .contact-home {
-    padding: 60px;
-    background-position: center;
+@media (min-width: 992px) {
+  .contact-footer {
+    margin-bottom: 100px;
   }
 }
-.contact-home__content {
+@media (min-width: 1430px) {
+  .contact-footer {
+    margin-bottom: 145px;
+  }
+}
+@media (min-width: 768px) {
+  .contact-footer {
+    padding: 60px;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.contact-footer__img {
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .contact-footer__img {
+    display: none;
+  }
+}
+.contact-footer__content {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
-  min-height: 450px;
   max-width: 577px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 35px 25px;
+  padding: 0px 15px;
+}
+@media (min-width: 768px) {
+  .contact-footer__content {
+    min-height: 450px;
+    padding: 35px 25px;
+  }
 }
 @media (min-width: 992px) {
-  .contact-home__content {
+  .contact-footer__content {
     padding: 70px 80px;
     min-height: 690px;
     background: #fff;
   }
 }
-.contact-home__content h2,
-.contact-home__content h3,
-.contact-home__content h4,
-.contact-home__content p {
+.contact-footer__content h2,
+.contact-footer__content h3,
+.contact-footer__content h4,
+.contact-footer__content p {
   margin-bottom: 20px;
 }
 @media (min-width: 992px) {
-  .contact-home__content p {
+  .contact-footer__content p {
     font-size: 18px;
   }
 }
-.contact-home__content .btn {
+.contact-footer__content .btn {
   margin-top: 30px;
 }
+.our-partners {
+  max-width: 638px;
+  text-align: center;
+  margin: 0 auto 50px;
+}
 @media (min-width: 992px) {
-  .contact-home-container {
-    padding: 0 15px;
+  .our-partners {
+    margin-bottom: 100px;
   }
 }
-@media (min-width: 992px) and (min-width: 344px) {
-  .contact-home-container {
-    padding-left: calc((100vw - 375px + 30px) / 2);
-    padding-right: calc((100vw - 375px + 30px) / 2);
+@media (min-width: 1430px) {
+  .our-partners {
+    margin-bottom: 150px;
   }
 }
-@media (min-width: 992px) and (min-width: 576px) {
-  .contact-home-container {
-    padding-left: calc((100vw - 540px + 30px) / 2);
-    padding-right: calc((100vw - 540px + 30px) / 2);
+.our-partners h1,
+.our-partners h2,
+.our-partners h3 {
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .our-partners h1,
+  .our-partners h2,
+  .our-partners h3 {
+    margin-bottom: 43px;
   }
 }
-@media (min-width: 992px) and (min-width: 768px) {
-  .contact-home-container {
-    padding-left: calc((100vw - 720px + 30px) / 2);
-    padding-right: calc((100vw - 720px + 30px) / 2);
+.our-partners__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.our-partners__row .line {
+  width: 1px;
+  height: 100px;
+  background: #D5D5D5;
+  margin: 0 30px;
+}
+@media (min-width: 992px) {
+  .our-partners__row .line {
+    height: 122px;
   }
 }
-@media (min-width: 992px) and (min-width: 992px) {
-  .contact-home-container {
-    padding-left: calc((100vw - 1350px + 30px) / 2);
-    padding-right: calc((100vw - 1350px + 30px) / 2);
-  }
-}
-@media (min-width: 992px) and (min-width: 1190px) {
-  .contact-home-container {
-    padding-left: calc((100vw - 1140px + 30px) / 2);
-    padding-right: calc((100vw - 1140px + 30px) / 2);
-  }
-}
-@media (min-width: 992px) and (min-width: 1430px) {
-  .contact-home-container {
-    padding-left: calc((100vw - 1350px + 30px) / 2);
-    padding-right: calc((100vw - 1350px + 30px) / 2);
-  }
-}
-@media (min-width: 992px) and (min-width: 992px) {
-  .contact-home-container {
-    padding-left: calc((100vw - 1350px + 30px) / 2);
-    padding-right: calc((100vw - 1350px + 30px) / 2);
-  }
-}
-@media (min-width: 992px) and (min-width: 1630px) {
-  .contact-home-container {
-    padding-left: calc((100vw - 1570px + 30px) / 2);
-    padding-right: calc((100vw - 1570px + 30px) / 2);
-  }
+.our-partners__img {
+  max-width: calc(50% - 20px);
 }
 .header-home {
   position: relative;
