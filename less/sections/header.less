@@ -1,0 +1,47 @@
+.header {
+
+  position: relative;
+  margin-bottom: 30px;
+
+  @media @xlg {
+    margin-bottom: 60px;
+
+    &.mb {
+      margin-bottom: 130px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: 20px;
+    filter: brightness(0.90);
+
+    @media @xlg {
+      margin-bottom: 0;
+    }
+  }
+
+  .content {
+
+    @media @xlg {
+      position: absolute;
+      top: calc(50%);
+      left: 0;
+      width: 100%;
+
+      color: #fff;
+    }
+  }
+
+  .label {
+    margin-bottom: 15px;
+
+    @media @xlg {
+      color: #fff;
+    }
+  }
+
+  h1,h2 {
+    max-width: 680px;
+  }
+}

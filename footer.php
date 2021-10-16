@@ -14,18 +14,23 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="our-partners">
-        <div class="label"><?php the_field('our-parnerts_label'); ?></div>
-        <h2><?php the_field('our-parnerts_title'); ?></h2>
-        <div class="our-partners__row">
-          <img class="our-partners__img" src="<?php echo get_field('our-parnerts_img-1')['url']; ?>" alt="partner logo">
-          <div class="line"></div>
-          <img class="our-partners__img" src="<?php echo get_field('our-parnerts_img-2')['url']; ?>" alt="partner logo">
-        </div>
-      </div>
-    </div>
-
+    <?php
+      if (is_front_page()) {
+        ?>
+          <div class="container">
+            <div class="our-partners">
+              <div class="label"><?php the_field('our-parnerts_label'); ?></div>
+              <h2><?php the_field('our-parnerts_title'); ?></h2>
+              <div class="our-partners__row">
+                <img class="our-partners__img" src="<?php echo get_field('our-parnerts_img-1')['url']; ?>" alt="partner logo">
+                <div class="line"></div>
+                <img class="our-partners__img" src="<?php echo get_field('our-parnerts_img-2')['url']; ?>" alt="partner logo">
+              </div>
+            </div>
+          </div>
+        <?php
+      }
+    ?>
 
     <footer class="footer" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/stopka.jpeg');">
 

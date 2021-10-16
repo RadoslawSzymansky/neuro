@@ -101,4 +101,5 @@ add_filter( 'pll_the_languages_args', function( $args ) { $args['display_names_a
 add_action('init', function() {
 	pll_register_string('dowiedz-sie-wiecej', 'Dowiedz się więcej');
 	pll_register_string('wroc-do-gory', 'Wróć do góry');
+	pll_register_string('wskazania', 'Wskazania');
 });

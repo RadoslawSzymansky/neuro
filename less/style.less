@@ -23,6 +23,7 @@ Version: 1.0.0
 @import "sections/news";
 @import "sections/contact-footer";
 @import "sections/our-partners";
+@import "sections/header";
 
 // pages
 
@@ -33,6 +34,8 @@ Version: 1.0.0
 @import "pages/cases";
 @import "pages/blog";
 @import "pages/contact-page";
+@import "pages/page-offer";
+@import "pages/service";
 
 // global
 
@@ -61,16 +64,15 @@ body {
 
     // overflow-x: hidden;
 
-    padding-top: 61px;
+    padding-top: 40px;
     padding-bottom: 56px;
 
     @media @lg {
       padding-bottom: 0;
     }
 
-
-    @media @xl {
-        padding-top: 80px;
+    @media @xlg {
+      padding-top: 0;
     }
 
     &.home {

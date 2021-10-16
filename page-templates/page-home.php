@@ -1,7 +1,5 @@
 <?php get_header(); // Template Name: Page Home ?>
 
-  <?php the_content(); ?>
-
   <!-- -----======== SLIDER HOME =======----- -->
 	<div class="header-home">
 		<!-- slider -->
