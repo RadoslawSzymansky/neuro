@@ -62,7 +62,7 @@ add_action( 'wp_enqueue_scripts', 'basic_scripts' );
 
 //  PAGE OPTIONS ADD
 if( function_exists('acf_add_options_page') ) {
-	
+
 	acf_add_options_page(array(
 		'page_title' 	=> 'Opcje strony',
 		'menu_title'	=> 'Opcje strony',
@@ -71,23 +71,23 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 
-function get_breadcrumb() { 
-	global $post; 
+function get_breadcrumb() {
+	global $post;
 	?>
 	 <div class="breadcrump">
 		<?php
-		echo '<a href="'.home_url().'" rel="nofollow">Strona Główna</a>'; 
-		if (is_singular( 'oferta' )){ 
-		echo ' <span></span> '; 
-		echo '<a href="'. get_home_url() .'/oferta">Oferta</a>'; 
-		echo ' <span></span> '; 
-		echo '<a class="end">' . get_the_title() . '</a>'; 
-		} elseif (is_page()) { 
-		if($post->post_parent != 0) { 
-		echo ' <span>></span> ' . '<a href="'. get_the_permalink( $post->post_parent ) .'">'. get_the_title( $post->post_parent ) . '</a>'; 
-		} 
-		echo ' <span>></span> '; 
-		echo '<a class="end">' . get_the_title() . '</a>'; 
+		echo '<a href="'.home_url().'" rel="nofollow">Strona Główna</a>';
+		if (is_singular( 'oferta' )){
+		echo ' <span></span> ';
+		echo '<a href="'. get_home_url() .'/oferta">Oferta</a>';
+		echo ' <span></span> ';
+		echo '<a class="end">' . get_the_title() . '</a>';
+		} elseif (is_page()) {
+		if($post->post_parent != 0) {
+		echo ' <span>></span> ' . '<a href="'. get_the_permalink( $post->post_parent ) .'">'. get_the_title( $post->post_parent ) . '</a>';
+		}
+		echo ' <span>></span> ';
+		echo '<a class="end">' . get_the_title() . '</a>';
 		} ?>
 	</div>
 	<?php
@@ -100,4 +100,5 @@ add_filter( 'pll_the_languages_args', function( $args ) { $args['display_names_a
 
 add_action('init', function() {
 	pll_register_string('dowiedz-sie-wiecej', 'Dowiedz się więcej');
+	pll_register_string('wroc-do-gory', 'Wróć do góry');
 });

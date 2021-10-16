@@ -21,3 +21,12 @@ window.addEventListener('scroll', () => {
 
     lastScroll = window.scrollY;
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.go-up').addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  })
+});
