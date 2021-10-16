@@ -2884,7 +2884,7 @@ strong {
   }
 }
 .service-for .right .item {
-  padding: 25px 35px;
+  padding: 25px 35px 35px;
   border-radius: 10px;
   background-color: #fff;
   width: 299px;
@@ -2899,6 +2899,137 @@ strong {
     margin-bottom: 30px;
     margin-right: 35px;
   }
+}
+.about__content {
+  margin-bottom: 80px;
+  max-width: 865px;
+}
+@media (min-width: 1190px) {
+  .about__content {
+    margin-bottom: 150px;
+  }
+}
+.about__middle {
+  position: relative;
+  margin-bottom: 60px;
+}
+@media (min-width: 992px) {
+  .about__middle {
+    margin-bottom: 100px;
+  }
+}
+.about__middle img {
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .about__middle .content {
+    max-width: 500px;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+  .about__middle .content h2,
+  .about__middle .content .label {
+    color: #fff;
+  }
+}
+@media (min-width: 992px) {
+  .about__middle .content {
+    padding-left: 70px;
+  }
+}
+@media (min-width: 1190px) {
+  .about__middle .content {
+    padding-left: 140px;
+  }
+}
+@media (min-width: 992px) {
+  .about-exp {
+    display: flex;
+  }
+  .about-exp::after {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 50vw;
+    background: #F2F3F3;
+    display: block;
+    content: "";
+    height: 80%;
+    border-radius: 20px;
+    z-index: -1;
+  }
+}
+@media (min-width: 992px) {
+  .about-exp .left {
+    width: 50%;
+    padding-top: 100px;
+  }
+}
+@media (min-width: 1190px) {
+  .about-exp .left {
+    width: 50%;
+  }
+}
+.about-exp .left .label {
+  margin-bottom: 20px;
+}
+.about-exp .left h2 {
+  margin-bottom: 30px;
+  max-width: 412px;
+}
+@media (min-width: 992px) {
+  .about-exp .right {
+    width: 50%;
+    padding-left: 70px;
+    padding-top: 110px;
+  }
+}
+@media (min-width: 1190px) {
+  .about-exp .right {
+    width: 50%;
+  }
+}
+.about-exp .right .content {
+  max-width: 525px;
+}
+.about-exp .right p {
+  margin-bottom: 20px;
+}
+@media (min-width: 1190px) {
+  .about-exp .right p {
+    margin-bottom: 25px;
+  }
+}
+.about-exp .right .icons {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+@media (min-width: 1190px) {
+  .about-exp .right .icons {
+    margin-top: 80px;
+  }
+}
+.about-exp .right .icons > div {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 30px;
+  width: 45%;
+  font-size: 14px;
+}
+@media (min-width: 1190px) {
+  .about-exp .right .icons > div {
+    margin-bottom: 45px;
+    font-size: 16px;
+  }
+}
+.about-exp .right .icons > div svg {
+  margin-bottom: 10px;
 }
 * {
   margin: 0;
@@ -3254,4 +3385,9 @@ li {
   margin-top: 23px;
   font-size: 14px;
   font-weight: 300;
+}
+.overflow {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
 }

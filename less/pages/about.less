@@ -1,0 +1,148 @@
+.about {
+
+  &__content {
+    margin-bottom: 80px;
+    max-width: 865px;
+
+    @media @xlg {
+      margin-bottom: 150px;
+    }
+  }
+
+  &__middle {
+
+    position: relative;
+    margin-bottom: 60px;
+
+    @media @lg {
+      margin-bottom: 100px;
+    }
+
+    img {
+      margin-bottom: 20px;
+    }
+
+    .content {
+
+      @media @lg {
+
+        max-width: 500px;
+        position: absolute;
+        top: 60%;
+        transform: translateY(-50%);
+        left: 0;
+
+        h2,.label {
+          color: #fff;
+        }
+      }
+
+      @media @lg {
+        padding-left: 70px;
+      }
+
+      @media @xlg {
+        padding-left: 140px;
+      }
+    }
+  }
+
+  &-exp {
+
+    @media @lg {
+      display: flex;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 50%;
+        width: 50vw;
+        background: #F2F3F3;
+        display: block;
+        content: "";
+        height: 80%;
+        border-radius: 20px;
+        z-index: -1;
+      }
+    }
+
+    .left {
+
+      @media @lg {
+        width: 50%;
+        padding-top: 100px;
+      }
+
+      @media @xlg {
+        width: 50%;
+      }
+
+      .label {
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        margin-bottom: 30px;
+        max-width: 412px;
+      }
+    }
+
+    .right {
+
+      @media @lg {
+        width: 50%;
+        padding-left: 70px;
+        padding-top: 110px;
+      }
+
+      @media @xlg {
+        width: 50%;
+      }
+
+      .content {
+        max-width: 525px;
+      }
+
+      p {
+        margin-bottom: 20px;
+
+        @media @xlg {
+          margin-bottom: 25px;
+        }
+      }
+
+      .icons {
+        margin-top: 50px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-end;
+        margin-bottom: 50px;
+
+        @media @xlg {
+          margin-top: 80px;
+        }
+
+        > div {
+          text-align: center;
+          font-weight: 300;
+
+          margin-bottom: 30px;
+
+          width: 45%;
+          font-size: 14px;
+
+          @media @xlg {
+            margin-bottom: 45px;
+            font-size: 16px;
+          }
+
+          svg {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
