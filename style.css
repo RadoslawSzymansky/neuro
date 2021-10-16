@@ -3391,3 +3391,40 @@ li {
   width: 100vw;
   overflow: hidden;
 }
+.text-section {
+  margin-bottom: 70px;
+  max-width: 864px;
+}
+@media (min-width: 1190px) {
+  .text-section {
+    margin-bottom: 140px;
+  }
+}
+.text-section h1,
+.text-section h2,
+.text-section h3 {
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .text-section h1,
+  .text-section h2,
+  .text-section h3 {
+    margin-bottom: 75px;
+  }
+}
+.text-section p {
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .text-section p {
+    margin-bottom: 25px;
+  }
+}
+.text-section .btn {
+  margin-top: 25px;
+}
+@media (min-width: 992px) {
+  .text-section .btn {
+    margin-top: 50px;
+  }
+}

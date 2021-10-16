@@ -66,5 +66,17 @@
     </div>
   </div>
 
+  <div class="container">
+
+    <div class="text-section">
+      <div class="label"><?php the_field('text_label'); ?></div>
+      <?php the_field('text-section'); ?>
+      <a download href="<?php the_field('file'); ?>" class="btn btn--transparent btn--primary">
+        <?php the_field('btn-text'); ?>
+      </a>
+    </div>
+
+  </div>
+
 
 <?php get_footer(); ?>
