@@ -102,4 +102,6 @@ add_action('init', function() {
 	pll_register_string('dowiedz-sie-wiecej', 'Dowiedz się więcej');
 	pll_register_string('wroc-do-gory', 'Wróć do góry');
 	pll_register_string('wskazania', 'Wskazania');
+	pll_register_string('rozwin', 'Rozwiń');
+	pll_register_string('zwin', 'Zwiń');
 });

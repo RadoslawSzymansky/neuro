@@ -169,6 +169,8 @@
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/news-slider.js"></script>
 
+    <script src="<?php echo get_template_directory_uri(); ?>/js/teams.js"></script>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
