@@ -22,9 +22,7 @@
       <div class="right">
         <a target="_blank" href="<?php echo get_field('btn')['url']; ?>" class="btn btn--primary btn--transparent"><?php echo get_field('btn')['title']; ?></a>
       </div>
-
     </div>
-
   </div>
 
 
