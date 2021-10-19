@@ -173,6 +173,8 @@
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/contact.js"></script>
 
+    <!-- map -->
+
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {

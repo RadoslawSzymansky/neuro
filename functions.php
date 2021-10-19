@@ -97,6 +97,13 @@ add_shortcode('show_breadcrumb', 'get_breadcrumb');
 
 add_filter( 'pll_the_languages_args', function( $args ) { $args['display_names_as'] = 'slug'; return $args; } );
 
+// Method 1: Filter.
+function my_acf_google_map_api( $api ){
+  $api['key'] = 'AIzaSyDKuQwHcsbQRlWGPAO_7Tc1QAZUgnv-ykg';
+  return $api;
+}
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
 
 add_action('init', function() {
 	pll_register_string('dowiedz-sie-wiecej', 'Dowiedz się więcej');
@@ -107,3 +114,5 @@ add_action('init', function() {
 	pll_register_string('pokaz', 'Pokaż miejsca na mapie');
 
 });
+
+

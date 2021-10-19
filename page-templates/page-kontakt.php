@@ -53,5 +53,221 @@
       </div>
   </div>
 
+  <div class="container">
+    <div class="label"><?php the_field('map_label'); ?></div>
+    <h2 class="label"><?php the_field('map_title'); ?></h2>
+  </div>
+  <div class="container container-xl">
+    <div id="map" class="map" style="overflow-y: hidden; overflow-x: visible;"></div>
+  </div>
 
+  <div>
+
+    </div>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKuQwHcsbQRlWGPAO_7Tc1QAZUgnv-ykg&amp;callback=initMap">
+    </script>
+<script>
+
+<?php
+$maps = array();
+if( have_rows('maps') ):
+  while ( have_rows('maps') ) : the_row();
+          $maps[] = get_sub_field('pin');
+  endwhile;
+endif;
+?>
+  <?php
+$php_array = $maps;
+$js_array = json_encode($php_array);
+echo "const PINS = ". $js_array . ";\n";
+?>
+
+console.log('PINY',PINS);
+
+  document.addEventListener('DOMContentLoaded', () => {
+  function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: +PINS[0].lat, lng: +PINS[0].lng },
+        zoom: 15,
+        disableDefaultUI: false,
+        mapTypeControl: false,
+        scaleControl: false,
+        zoomControl: false,
+        fullscreenControl: false,
+        streetViewControl: false,
+        styles: [
+            {
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#f5f5f5"
+                }
+              ]
+            },
+            {
+              "elementType": "labels.icon",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#616161"
+                }
+              ]
+            },
+            {
+              "elementType": "labels.text.stroke",
+              "stylers": [
+                {
+                  "color": "#f5f5f5"
+                }
+              ]
+            },
+            {
+              "featureType": "administrative.land_parcel",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#bdbdbd"
+                }
+              ]
+            },
+            {
+              "featureType": "poi",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#eeeeee"
+                }
+              ]
+            },
+            {
+              "featureType": "poi",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#757575"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.park",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#e5e5e5"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.park",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#9e9e9e"
+                }
+              ]
+            },
+            {
+              "featureType": "road",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#ffffff"
+                }
+              ]
+            },
+            {
+              "featureType": "road.arterial",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#757575"
+                }
+              ]
+            },
+            {
+              "featureType": "road.highway",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#dadada"
+                }
+              ]
+            },
+            {
+              "featureType": "road.highway",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#616161"
+                }
+              ]
+            },
+            {
+              "featureType": "road.local",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#9e9e9e"
+                }
+              ]
+            },
+            {
+              "featureType": "transit.line",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#e5e5e5"
+                }
+              ]
+            },
+            {
+              "featureType": "transit.station",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#eeeeee"
+                }
+              ]
+            },
+            {
+              "featureType": "water",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#c9c9c9"
+                }
+              ]
+            },
+            {
+              "featureType": "water",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#9e9e9e"
+                }
+              ]
+            }
+          ]
+    });
+
+    PINS.forEach(( pin ) => {
+      new google.maps.Marker({
+          position: new google.maps.LatLng(+pin.lat, +pin.lng),
+          icon: 'http://neuro.sodova.com/wp-content/uploads/2021/10/pin.png',
+          map: map
+      });
+    })
+  }
+  initMap();
+})
+</script>
 <?php get_footer(); ?>
