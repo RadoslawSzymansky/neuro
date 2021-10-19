@@ -171,6 +171,8 @@
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/teams.js"></script>
 
+    <script src="<?php echo get_template_directory_uri(); ?>/js/contact.js"></script>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {

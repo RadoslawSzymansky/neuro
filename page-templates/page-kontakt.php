@@ -46,5 +46,12 @@
     </div>
   </div>
 
+  <div class="container">
+      <div class="contact-form">
+        <?php $form_name = '[contact-form-7  title="Formularz_' . pll_current_language() . '"]'; ?>
+        <?php echo do_shortcode($form_name); ?>
+      </div>
+  </div>
+
 
 <?php get_footer(); ?>

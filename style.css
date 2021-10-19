@@ -2680,245 +2680,6 @@ strong {
     opacity: 0;
   }
 }
-.contact-page {
-  margin-bottom: 60px;
-}
-@media (min-width: 992px) {
-  .contact-page {
-    margin-bottom: 100px;
-    display: flex;
-  }
-}
-.contact-page__left {
-  margin-bottom: 50px;
-}
-@media (min-width: 992px) {
-  .contact-page__left {
-    margin-bottom: 0;
-    width: 50%;
-    padding-top: 10px;
-  }
-}
-.contact-page__left b,
-.contact-page__left strong {
-  display: inline-block;
-  color: #BEBD00;
-  margin: 22px 0;
-  letter-spacing: 0.65px;
-  font-weight: 600;
-}
-.contact-page__left b:not(:first-child),
-.contact-page__left strong:not(:first-child) {
-  margin-top: 35px;
-}
-@media (min-width: 1190px) {
-  .contact-page__left b:not(:first-child),
-  .contact-page__left strong:not(:first-child) {
-    margin-top: 50px;
-  }
-}
-.contact-page__left h2,
-.contact-page__left h3,
-.contact-page__left h4,
-.contact-page__left h5 {
-  margin-bottom: 20px;
-}
-@media (min-width: 1190px) {
-  .contact-page__left h2,
-  .contact-page__left h3,
-  .contact-page__left h4,
-  .contact-page__left h5 {
-    margin-bottom: 23px;
-  }
-}
-.contact-page__right {
-  padding: 30px 0;
-  position: relative;
-  background-color: #EFE9E5;
-}
-@media (min-width: 992px) {
-  .contact-page__right {
-    padding: 40px;
-    width: 50%;
-  }
-}
-@media (min-width: 1190px) {
-  .contact-page__right {
-    padding: 50px;
-  }
-}
-@media (min-width: 1430px) {
-  .contact-page__right {
-    padding: 80px 70px;
-  }
-}
-.contact-page__right::after {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 200vw;
-  top: 0;
-  left: -50vw;
-  height: 100%;
-  z-index: -1;
-  background-color: #EFE9E5;
-}
-@media (min-width: 992px) {
-  .contact-page__right::after {
-    left: 0;
-  }
-}
-.contact-page__right form {
-  max-width: 680px;
-  margin: 0 auto;
-}
-.contact-page__right form .wpcf7-not-valid-tip {
-  font-size: 10px;
-  margin-top: -20px;
-}
-.contact-page__right form h3 {
-  margin-bottom: 20px;
-}
-@media (min-width: 1190px) {
-  .contact-page__right form h3 {
-    margin-bottom: 30px;
-  }
-}
-@media (min-width: 992px) {
-  .contact-page__right .form-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-}
-.contact-page__right input,
-.contact-page__right textarea,
-.contact-page__right select {
-  width: 100%;
-  display: block;
-  border: none;
-  padding: 10px 10px 10px 0;
-  border-bottom: 1px solid #292929;
-  margin-bottom: 20px;
-  transition: 0.2s;
-  background-color: transparent;
-}
-.contact-page__right input::placeholder,
-.contact-page__right textarea::placeholder,
-.contact-page__right select::placeholder {
-  color: #292929;
-}
-.contact-page__right input:focus,
-.contact-page__right textarea:focus,
-.contact-page__right select:focus {
-  border-color: #292929;
-  background-color: transparent;
-  outline: none;
-  padding-left: 20px;
-}
-.contact-page__right select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: url("./assets/arrow-down-dark.svg") no-repeat;
-  background-size: 12px;
-  background-position: calc(100% - 20px) center;
-  background-repeat: no-repeat;
-  background-color: transparent;
-}
-.contact-page__right textarea {
-  height: 120px;
-  margin-bottom: 0;
-}
-.contact-page__right .wpcf7-acceptance label {
-  cursor: pointer;
-  display: flex;
-  position: relative;
-}
-.contact-page__right .wpcf7-acceptance input {
-  width: 0;
-  height: 0;
-  cursor: pointer;
-  opacity: 0;
-}
-.contact-page__right .wpcf7-acceptance input:checked + .wpcf7-list-item-label::before {
-  padding-top: 3px;
-  padding-left: 2px;
-  content: url('./assets/icons/Path 52148.svg');
-}
-.contact-page__right .wpcf7-acceptance .wpcf7-list-item {
-  margin-left: 0;
-  margin-bottom: 40px;
-}
-.contact-page__right .wpcf7-acceptance .wpcf7-list-item-label {
-  padding-left: 50px;
-  font-size: 10px;
-}
-.contact-page__right .wpcf7-acceptance .wpcf7-list-item-label a {
-  text-decoration: underline;
-  font-size: 14px;
-}
-.contact-page__right .wpcf7-acceptance .wpcf7-list-item-label::before {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 19px;
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #292929;
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 8px;
-}
-.contact-page .input-row {
-  position: relative;
-  transition: 0.4s;
-}
-@media (min-width: 992px) {
-  .contact-page .input-row {
-    width: calc(50% - 20px);
-  }
-  .contact-page .input-row--full {
-    width: 100%;
-  }
-}
-.contact-page .input-row textarea:focus + .input-row__label,
-.contact-page .input-row input:focus + .input-row__label {
-  padding-left: 15px;
-}
-.contact-page .input-row__label {
-  color: #292929;
-  position: absolute;
-  transition: 0.4s;
-  top: 10px;
-  font-size: 16px;
-  z-index: 2;
-  left: 0;
-}
-.contact-page .input-row.active {
-  padding-top: 25px;
-}
-.contact-page .input-row.active input,
-.contact-page .input-row.active textarea {
-  padding-left: 20px;
-}
-.contact-page .input-row.active input:focus + .input-row__label,
-.contact-page .input-row.active textarea:focus + .input-row__label {
-  padding-left: 0;
-}
-.contact-page .input-row.active .input-row__label {
-  top: 10px;
-  font-size: 14px;
-  color: #202021;
-  left: 0;
-  font-weight: 500;
-}
-.contact-page .accept-wrapper {
-  margin-top: 20px;
-}
 .page-offer {
   margin-bottom: 60px;
 }
@@ -3582,6 +3343,200 @@ strong {
 }
 @media (min-width: 992px) {
   .contact-top p {
+    margin-bottom: 40px;
+  }
+}
+.contact-form {
+  margin-bottom: 50px;
+}
+@media (min-width: 992px) {
+  .contact-form {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1190px) {
+  .contact-form {
+    margin-bottom: 140px;
+  }
+}
+.contact-form h2 {
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .contact-form h2 {
+    margin-bottom: 60px;
+  }
+}
+.contact-form form {
+  max-width: 680px;
+  margin: 0 auto;
+}
+.contact-form form .wpcf7-not-valid-tip {
+  font-size: 10px;
+  margin-top: -20px;
+}
+.contact-form form h3 {
+  margin-bottom: 20px;
+}
+@media (min-width: 1190px) {
+  .contact-form form h3 {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 992px) {
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  display: block;
+  border: 1px solid #F5F5F5;
+  padding: 17px 20px ;
+  margin-bottom: 20px;
+  transition: 0.2s;
+  background-color: transparent;
+  border-radius: 10px;
+  font-weight: 300;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder,
+.contact-form select::placeholder {
+  color: #292929;
+}
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: #292929;
+  background-color: transparent;
+  outline: none;
+  padding-left: 20px;
+  border: 1px solid #00B9F2;
+}
+.contact-form input select,
+.contact-form textarea select,
+.contact-form select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("./assets/arrow-down-dark.svg") no-repeat;
+  background-size: 12px;
+  background-position: calc(100% - 20px) center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+.contact-form input textarea,
+.contact-form textarea textarea,
+.contact-form select textarea {
+  height: 120px;
+  margin-bottom: 0;
+}
+.contact-form input .wpcf7-acceptance label,
+.contact-form textarea .wpcf7-acceptance label,
+.contact-form select .wpcf7-acceptance label {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+}
+.contact-form input .wpcf7-acceptance input,
+.contact-form textarea .wpcf7-acceptance input,
+.contact-form select .wpcf7-acceptance input {
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  opacity: 0;
+}
+.contact-form input .wpcf7-acceptance input:checked + .wpcf7-list-item-label::before,
+.contact-form textarea .wpcf7-acceptance input:checked + .wpcf7-list-item-label::before,
+.contact-form select .wpcf7-acceptance input:checked + .wpcf7-list-item-label::before {
+  padding-top: 3px;
+  padding-left: 2px;
+  content: url('./assets/icons/Path 52148.svg');
+}
+.contact-form input .wpcf7-acceptance .wpcf7-list-item,
+.contact-form textarea .wpcf7-acceptance .wpcf7-list-item,
+.contact-form select .wpcf7-acceptance .wpcf7-list-item {
+  margin-left: 0;
+  margin-bottom: 40px;
+}
+.contact-form input .wpcf7-acceptance .wpcf7-list-item-label,
+.contact-form textarea .wpcf7-acceptance .wpcf7-list-item-label,
+.contact-form select .wpcf7-acceptance .wpcf7-list-item-label {
+  padding-left: 50px;
+  font-size: 10px;
+}
+.contact-form input .wpcf7-acceptance .wpcf7-list-item-label a,
+.contact-form textarea .wpcf7-acceptance .wpcf7-list-item-label a,
+.contact-form select .wpcf7-acceptance .wpcf7-list-item-label a {
+  text-decoration: underline;
+  font-size: 14px;
+}
+.contact-form input .wpcf7-acceptance .wpcf7-list-item-label::before,
+.contact-form textarea .wpcf7-acceptance .wpcf7-list-item-label::before,
+.contact-form select .wpcf7-acceptance .wpcf7-list-item-label::before {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 19px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #292929;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+.contact-form .input-row {
+  position: relative;
+  transition: 0.4s;
+  font-weight: 300;
+}
+@media (min-width: 992px) {
+  .contact-form .input-row--full {
+    width: 100%;
+  }
+}
+.contact-form .input-row textarea:focus + .input-row__label,
+.contact-form .input-row input:focus + .input-row__label {
+  padding-left: 15px;
+}
+.contact-form .input-row__label {
+  color: #292929;
+  position: absolute;
+  transition: 0.4s;
+  top: 17px;
+  font-size: 16px;
+  z-index: 2;
+  left: 20px;
+  background-color: #fff;
+  padding: 0 5px;
+}
+.contact-form .input-row.active input,
+.contact-form .input-row.active textarea {
+  padding-left: 20px;
+}
+.contact-form .input-row.active input:focus + .input-row__label,
+.contact-form .input-row.active textarea:focus + .input-row__label {
+  padding-left: 0;
+}
+.contact-form .input-row.active .input-row__label {
+  top: -7px;
+  left: 20px;
+  font-size: 12px;
+  color: #202021;
+  font-weight: 500;
+  background-color: #fff;
+}
+.contact-form .accept-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 10px;
+}
+@media (min-width: 992px) {
+  .contact-form .accept-text {
+    font-size: 12px;
     margin-bottom: 40px;
   }
 }
