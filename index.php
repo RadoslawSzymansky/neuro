@@ -1,16 +1,6 @@
 <?php get_header(); // Template Name: Blog ?>
 
 
-<header class="header mb">
-    <img src="<?php echo get_field('header_img', get_option( 'page_for_posts' ))['url']; ?>" alt="<?php echo get_field('header_img', get_option( 'page_for_posts' ))['alt']; ?>" class="header__img">
-    <div class="content">
-      <div class="container">
-        <div class="label"><?php the_field('header_label', get_option( 'page_for_posts' )); ?></div>
-        <h1 class="title"><?php the_field('header_title', get_option( 'page_for_posts' )); ?></h1>
-      </div>
-    </div>
-  </header>
-
 
 
 <header class="header mb">

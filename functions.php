@@ -112,6 +112,7 @@ add_action('init', function() {
 	pll_register_string('rozwin', 'Rozwiń');
 	pll_register_string('zwin', 'Zwiń');
 	pll_register_string('pokaz', 'Pokaż miejsca na mapie');
+	pll_register_string('news', 'Powrót do aktualności');
 
 });
 

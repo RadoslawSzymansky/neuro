@@ -1,0 +1,140 @@
+.single-blog {
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+  @media @lg {
+    display: flex;
+    margin-top: 70px;
+  }
+
+  .left {
+    position: relative;
+    flex: 1;
+
+    .text-section {
+      position: sticky;
+      top: 100px;
+    }
+
+    .back {
+      color: @primary;
+      font-weight: 300;
+      margin-bottom: 30px;
+
+      @media @lg {
+        margin-bottom: 50px;
+      }
+
+      svg {
+        margin-right: 12px;
+        position: relative;
+        top: 2px
+      }
+
+    };
+
+    h1,h2,h3 {
+      max-width: 500px;
+    }
+
+    @media @lg {
+      width: 50%;
+      min-width: 50%;
+      padding-top: 50px;
+
+      &::after {
+        display: block;
+        content: "";
+        position: absolute;
+
+        top: calc(0% - 70px);
+        width: 80vw;
+        height: 100%;
+        right: 5%;
+        z-index: -1;
+        background: #F2F3F3;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .right {
+    flex: 1;
+
+    @media @lg {
+      padding-top: 130px;
+      width: 50%;
+      min-width: 50%;
+      padding-left: 60px;
+
+      padding-bottom: 200px;
+    }
+
+    @media @xlg {
+      padding-left: 80px;
+    }
+
+    .call-us {
+      margin: 0 auto 30px;
+
+      @media @lg {
+        margin-bottom: 70px;
+      }
+
+      @media @xlg {
+        margin-bottom: 120px;
+      }
+
+      p {
+        margin-bottom: 0px !important;
+      }
+    }
+
+    .flex  {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      margin-bottom: 30px;
+      margin-top: 20px;
+
+      svg {
+        margin-right: 20px;
+      }
+
+      @media @lg {
+        font-size: 20px;
+        margin-top: 30px;
+      }
+    }
+  }
+
+  h1,h2 {
+    margin-bottom: 30px;
+
+    @media @lg {
+      margin-bottom: 45px;
+    }
+  }
+
+  h4,h5, b, strong {
+    font-weight: 500;
+  }
+
+  h4,h5,h6 {
+    font-size: 20px;
+  }
+
+  p,h1,h2,h3,h4,h5 {
+    max-width: 630px;
+    margin-bottom: 17px;
+  }
+
+  p {
+    margin-bottom: 25px;
+    line-height: 2;
+
+    @media @lg {
+      margin-bottom: 40px;
+    }
+  }
+}
