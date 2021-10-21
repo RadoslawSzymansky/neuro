@@ -34,10 +34,12 @@
     <div class="container">
       <div class="about-exp">
         <div class="left">
-          <div class="label">
-            <?php the_field('about-exp-label'); ?>
+          <div class="sticky">
+            <div class="label">
+              <?php the_field('about-exp-label'); ?>
+            </div>
+            <h2><?php the_field('about-exp-title'); ?></h2>
           </div>
-          <h2><?php the_field('about-exp-title'); ?></h2>
         </div>
 
         <div class="right">

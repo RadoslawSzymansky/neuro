@@ -2847,6 +2847,7 @@ strong {
   .about-exp .left {
     width: 50%;
     padding-top: 100px;
+    padding-bottom: 25%;
   }
 }
 @media (min-width: 1190px) {
@@ -3734,16 +3735,18 @@ b,
 strong {
   font-weight: 600;
 }
-.label {
+x .label {
   color: #00B9F2;
   margin-bottom: 16px;
   font-weight: 400;
   letter-spacing: 5px;
   font-size: 12px;
 }
-.overflow {
-  overflow-x: hidden;
-  max-width: 100vw;
+@media (max-width: 992px) {
+  .overflow {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
 }
 ul li {
   margin-bottom: 7px;
@@ -4029,8 +4032,12 @@ li {
 }
 .overflow {
   position: relative;
-  width: 100vw;
-  overflow-x: hidden;
+}
+@media (max-width: 992px) {
+  .overflow {
+    width: 100vw;
+    overflow-x: hidden;
+  }
 }
 .text-section {
   margin-bottom: 70px;
@@ -4067,5 +4074,41 @@ li {
 @media (min-width: 992px) {
   .text-section .btn {
     margin-top: 50px;
+  }
+}
+.files {
+  margin-bottom: 100px;
+}
+@media (min-width: 992px) {
+  .files {
+    margin-bottom: 140px;
+  }
+}
+.files > div {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 992px) {
+  .files > div {
+    padding: 40px 0;
+  }
+}
+.files > div::after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #D0D3D5;
+  content: "";
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 992px) {
+  .sticky {
+    position: sticky;
+    top: 70px;
   }
 }
