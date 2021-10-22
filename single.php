@@ -27,4 +27,36 @@
     </div>
   </div>
 
+  <div class="container">
+    <div class="blog-wrapper">
+      <h2><?php pll_e('Pozostałe artykuły'); ?></h2>
+      <div class="blog">
+          <?php
+          $the_query = new WP_Query( array(
+              'posts_per_page' => 3,
+              'post__not_in'  => array(get_the_ID())
+          ));
+          ?>
+          <?php if ( $the_query->have_posts() ) : ?>
+              <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+              <a href="<?php  the_permalink(); ?>">
+                <div class="news__item">
+                  <div  class="title-wrapper">
+                    <h3><?php  the_title(); ?></h3>
+                    <p class="short-desc"><?php the_field('short_desc', $item->ID); ?></p>
+                  </div>
+                  <div  class="get-more">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/arrow-small.svg">
+                    <?php pll_e('Dowiedz się więcej'); ?>
+                  </div>
+                </div>
+              </a>
+              <?php endwhile; ?>
+              <?php wp_reset_postdata(); ?>
+          <?php else : ?>
+          <?php endif; ?>
+      </div>
+  </div>
+  </div>
+
 <?php get_footer(); ?>

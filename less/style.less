@@ -11,14 +11,12 @@ Version: 1.0.0
 @import "typography";
 
 // components
-
 @import "components/burger";
 @import "components/buttons";
 @import "components/menu";
 @import "components/breadcrump";
 
 // sections
-
 @import "sections/footer";
 @import "sections/news";
 @import "sections/contact-footer";
@@ -138,12 +136,9 @@ ul li {
     }
 }
 
-
 li {
     list-style: none;
 }
-
-
 
 // COOKIE POPUP
 .moove_gdpr_cookie_info_bar {
@@ -163,7 +158,6 @@ li {
         @media @md {
             font-size: 16px !important;
         }
-
     }
 
     p:nth-child(1) {
@@ -172,7 +166,6 @@ li {
 }
 
 .moove-gdpr-cookie-notice {
-
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -238,7 +231,6 @@ li {
     border-top: 0 solid #000 !important;
     box-shadow: 0 0 48px 0 rgba(0, 0, 0, .1);
 }
-
 
 .page-content {
     max-width: 920px;
@@ -500,4 +492,32 @@ box-shadow: 0 0 5px 0 rgba(0,0,0,.1);
     position: sticky;
     top: 70px;
   }
+}
+
+
+.label {
+  margin-bottom: 20px;
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: @primary;
+}
+
+
+.header {
+  label {
+
+    color: #fff;
+  }
+}
+
+.blog-wrapper h2 {
+  @media @lg {
+    margin-left: 20px;
+  }
+}
+.blog-wrapper .blog {
+
+  margin-top: 30px;
 }
